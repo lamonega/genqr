@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>genqr | Python-based QR Generator</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 20px;
+        text-align: center;
+      }
+      h1 {
+        color: #333;
+      }
+      h3 {
+        color: #666;
+        margin-bottom: 30px;
+      }
+      form {
+        margin-top: 20px;
+      }
+      input {
+        padding: 10px;
+        width: 300px;
+        border: 1px solid #ddd;
+        border-radius: 4px;
+        margin-right: 10px;
+      }
+      button {
+        padding: 10px 20px;
+        background-color: #007bff;
+        color: white;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+      }
+      button:hover {
+        background-color: #0056b3;
+      }
+      .error {
+        color: #dc3545;
+        margin-top: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>genqr</h1>
+    <h3>Python-based QR generator</h3>
+    <form action="/generate_qr" method="get">
+      <input
+        name="url"
+        type="text"
+        placeholder="Ingresa una URL (ej: https://www.ejemplo.com)"
+      />
+      <button type="submit">Convertir</button>
+    </form>
+  </body>
+</html>

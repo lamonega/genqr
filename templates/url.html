@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>genqr | Tu código QR</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 20px;
+        text-align: center;
+      }
+      h1 {
+        color: #333;
+      }
+      .url-text {
+        color: #666;
+        word-break: break-all;
+        margin: 20px 0;
+      }
+      img {
+        margin: 20px auto;
+        display: block;
+        max-width: 300px;
+        border: 1px solid #ddd;
+        padding: 10px;
+        border-radius: 4px;
+      }
+      .back-button {
+        display: inline-block;
+        padding: 10px 20px;
+        background-color: #007bff;
+        color: white;
+        text-decoration: none;
+        border-radius: 4px;
+        margin-top: 20px;
+      }
+      .back-button:hover {
+        background-color: #0056b3;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Tu código QR</h1>
+    <p class="url-text">URL: {{url}}</p>
+    <img src="data:image/png;base64,{{ qr_base64 }}" alt="QR Code" />
+    <br />
+    <a href="/" class="back-button">Generar otro QR</a>
+  </body>
+</html>
