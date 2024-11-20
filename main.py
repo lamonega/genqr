@@ -17,7 +17,7 @@ def print_url():
     qr = qrcode.make(url)
     
     # Convertir a base64
-    buffered = BytesIO() # BytesIO reserva un espacio de memoria RAM y lo usa como almacenamiento
+    buffered = BytesIO()
     qr.save(buffered)
     qr_base64 = base64.b64encode(buffered.getvalue()).decode()
     

@@ -1,3 +1,55 @@
-.venv
-venv
+# Archivos de Python compilados
+__pycache__/
+*.py[cod]
+
+# Entornos virtuales
+env/
 venv/
+ENV/
+.venv/
+
+# Archivos de configuración de editores/IDEs
+.idea/
+.vscode/
+*.sublime-project
+*.sublime-workspace
+
+# Archivos de dependencias
+Pipfile.lock
+poetry.lock
+*.egg-info/
+
+# Archivos de distribución
+dist/
+build/
+*.tar.gz
+*.egg
+
+# Archivos de log
+*.log
+
+# Archivos temporales
+*.bak
+*.swp
+*~
+*.tmp
+
+# Archivos de configuración local
+*.env
+*.env.*
+
+# Archivos de pruebas
+.coverage
+.tox/
+.nox/
+.dypy/
+nosetests.xml
+coverage.xml
+*.cover
+*.hypothesis/
+
+# Archivos específicos de macOS
+.DS_Store
+
+# Archivos específicos de Windows
+Thumbs.db
